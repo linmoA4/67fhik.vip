@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <!-- 灵动岛风格标题 -->
+    <FrameLayout
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/island_shape"
+        android:elevation="8dp"
+        android:layout_marginBottom="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="林默注入器"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <!-- 状态文本 -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="检查权限中..."
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- 启动服务按钮 -->
+    <Button
+        android:id="@+id/startServiceBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="12dp"
+        android:backgroundTint="#FF6B35"
+        android:enabled="false"
+        android:text="启动悬浮窗服务"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- 权限请求按钮 -->
+    <Button
+        android:id="@+id/requestPermissionBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="12dp"
+        android:backgroundTint="#16213E"
+        android:text="请求所有权限"
+        android:textSize="16sp" />
+
+    <!-- 使用说明 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        android:padding="16dp"
+        android:text="使用说明：\n\n1. 点击「请求所有权限」\n2. 授予悬浮窗和存储权限\n3. 点击「启动悬浮窗服务」\n4. 音量键+ 打开/关闭悬浮窗\n5. 悬浮窗上点击导入功能"
+        android:textColor="#AAAAAA"
+        android:textSize="13sp" />
+
+</LinearLayout>
